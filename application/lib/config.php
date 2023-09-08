@@ -4,10 +4,10 @@ define("_ROOT", $_SERVER["DOCUMENT_ROOT"]);
 define("_EXTENSION_PHP", ".php");
 
 // DB관련
-define("_DB_HOST", "localhost");
+define("_DB_HOST", "192.168.0.30");
 define("_DB_USER", "root");
 define("_DB_PASSWORD", "root506");
-define("_DB_NAME", "petRealestate");
+define("_DB_NAME", "pet_realestate");
 define("_DB_CHARSET", "utf8mb4");
 
 
