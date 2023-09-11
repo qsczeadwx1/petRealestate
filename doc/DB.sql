@@ -170,3 +170,5 @@ INSERT INTO `subways` (`sub_name`) VALUES ('수성못');
 INSERT INTO `subways` (`sub_name`) VALUES ('지산');
 INSERT INTO `subways` (`sub_name`) VALUES ('범물');
 INSERT INTO `subways` (`sub_name`) VALUES ('용지');
+
+INSERT INTO `seller_license` (`seller_license`) VALUES (123456789);

@@ -3,6 +3,7 @@
 namespace application\model;
 
 class UserModel extends Model {
+    // 유저정보 조회
     public function getUser($arrUserInfo, $pwFlg = true) {
         $sql = " SELECT "
             ." * "
@@ -35,7 +36,7 @@ class UserModel extends Model {
         return $result;
     }
     
-    // insert User
+    // 유저생성
     public function insertUser($arrUserInfo) {
         $sql = " INSERT INTO "
             . " user_info( "
@@ -68,7 +69,7 @@ class UserModel extends Model {
         }
     }
 
-    // update User
+    // 유저 정보 업데이트
     public function updateUser($arrUserInfo) {
         $sql = 
         " UPDATE "

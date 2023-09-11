@@ -17,11 +17,10 @@ class Model {
             ,PDO::ATTR_ERRMODE             => PDO::ERRMODE_EXCEPTION
             ,PDO::ATTR_DEFAULT_FETCH_MODE  => PDO::FETCH_ASSOC
         ];
-
         try {
             $this->conn = new PDO($dns, _DB_USER, _DB_PASSWORD, $option);
         } catch (Exception $e) {
-            echo "DB Connect Error : ".$e->getMessage();
+            echo "DB 연결 에러 : ".$e->getMessage();
             exit();
         }
     }

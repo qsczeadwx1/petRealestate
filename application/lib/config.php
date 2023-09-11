@@ -20,6 +20,7 @@ define("_BASE_FILENAME_MODEL", "Model");
 define("_BASE_FILENAME_VIEW", "View");
 
 define("_BASE_FILENAME_HEADER", "header");
+define("_BASE_FILENAME_FOOTER", "footer");
 
 define("_BASE_REDIRECT", "Location: ");
 
