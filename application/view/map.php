@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <?php include_once(_PATH_VIEW._BASE_FILENAME_HEADER._EXTENSION_PHP); ?>
+<?php include_once(_PATH_VIEW."layout/"._BASE_FILENAME_HEADER._EXTENSION_PHP); ?>
     <div id="map" style="width: 1000px; height: 1000px;"></div>
 
 

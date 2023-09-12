@@ -29,21 +29,21 @@ class UserController extends Controller {
         // // 로그인페이지 리턴
         // return "main"._EXTENSION_PHP;
     }
-    // 로그아웃 페이지로
+    
     public function logoutGet() {
         return "logout"._EXTENSION_PHP;
     }
     public function mainGet() {
         return "main"._EXTENSION_PHP;
     }
-
-    // 회원가입
     public function registGet() {
         return "regist"._EXTENSION_PHP;
     }
-
-    public function registCmpGet() {
-        return "registCmp"._EXTENSION_PHP;
+    public function registUserGet() {
+        return "registUser"._EXTENSION_PHP;
+    }
+    public function registSellerGet() {
+        return "registSeller"._EXTENSION_PHP;
     }
 
     public function detailGet() {
@@ -99,7 +99,7 @@ class UserController extends Controller {
         if(!empty($arrChkErr)) {
             // 에러 메세지 셋팅
             $this->addDynamicProperty('arrError', $arrChkErr);
-            return "regist"._EXTENSION_PHP;
+            return "registUser"._EXTENSION_PHP;
         }
         
         $result = $this->model->getUser($arrPost, false);
@@ -109,7 +109,7 @@ class UserController extends Controller {
             $errMsg = "입력하신 ID가 사용중입니다.";
             $this->addDynamicProperty("errMsg", $errMsg);
             // 회원가입 페이지 리턴
-            return "regist"._EXTENSION_PHP;
+            return "registUser"._EXTENSION_PHP;
         }
         // **************** transaction start
         $this->model->beginTransaction();
